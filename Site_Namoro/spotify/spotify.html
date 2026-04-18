@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Spotify - Gustavo e Iascara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="audio-player" src="MUSICA.mp3"></audio>
+
+<div class="phone-screen">
+    <div class="header-msg">Eu te amo mais que tudo! ❤️🥺</div>
+    
+    <img src="FOTO.jpeg" class="main-photo">
+    
+    <div class="song-info">
+        <h2 class="song-title">Pra Sempre Com Você</h2>
+        <p class="artist">Jorge e Mateus</p>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar-bg"><div class="progress-fill" id="fill"></div></div>
+        <div class="time-stamps">
+            <span id="cur-time">0:00</span>
+            <span id="total-time">0:00</span>
+        </div>
+    </div>
+
+    <div class="controls-row">
+    <button class="btn-icon">⇄</button>
+    <button class="btn-icon" id="prev-btn">⏮</button> 
+    <button class="btn-play-pause" id="play-btn">▶</button>
+    <button class="btn-icon" id="next-btn">⏭</button> 
+    <button class="btn-icon">↻</button>
+</div>
+
+    <div class="couple-card">
+        <div class="couple-header-img">
+             <span class="card-label-top">Sobre o casal</span>
+        </div>
+        <div class="couple-info-area">
+            <div class="couple-names">Gustavo e Iascara</div>
+            <div class="couple-since">Desde 2024</div>
+            <div class="counter-grid">
+                <div class="counter-item"><span class="counter-number" id="anos">0</span><span class="counter-label">Anos</span></div>
+                <div class="counter-item"><span class="counter-number" id="meses">0</span><span class="counter-label">Meses</span></div>
+                <div class="counter-item"><span class="counter-number" id="dias">0</span><span class="counter-label">Dias</span></div>
+                <div class="counter-item"><span class="counter-number" id="horas">0</span><span class="counter-label">Horas</span></div>
+                <div class="counter-item"><span class="counter-number" id="minutos">0</span><span class="counter-label">Minutos</span></div>
+                <div class="counter-item"><span class="counter-number" id="segundos">0</span><span class="counter-label">Segundos</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="special-msg-card">
+        <h3>Mensagem especial</h3>
+        <p class="msg-content" id="msg-text">Você é o amor da minha vida e a pessoa que me faz querer ser melhor a cada novo dia 😊❤️. Nossa história é a música mais bonita que eu já ouvi!</p>
+        <button class="btn-msg" id="btn-msg-toggle">Mostrar Mensagem</button>
+    </div>
+
+    <div class="stories-footer">
+        <div class="story-circle" onclick="openStory(0)">
+            <div class="img-wrapper"><img src="FOTO2.jpeg"></div>
+            <span>Nossa União</span>
+        </div>
+        <div class="story-circle" onclick="openStory(1)">
+            <div class="img-wrapper"><img src="FOTO3.jpeg"></div>
+            <span>Retrospectiva</span>
+        </div>
+    </div>
+</div>
+
+<div id="story-modal" class="story-modal">
+    <div id="story-bg" class="story-bg-fullscreen"></div>
+    <div class="story-overlay"></div>
+    
+    <div class="story-header">
+        <div id="progress-bars" class="bars-container"></div>
+        <div class="story-profile">
+            <img src="FOTO.jpeg" class="story-avatar">
+            <span class="story-user">Gustavo e Iascara</span>
+            <span class="close-story" id="close-x">&times;</span>
+        </div>
+    </div>
+    
+    <div class="story-main-content" id="story-content"></div>
+    
+    <div class="tap-area left" id="tap-left"></div>
+    <div class="tap-area right" id="tap-right"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

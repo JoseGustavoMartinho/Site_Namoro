@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Amor 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+  <div id="start" class="card">
+    <h1>🎁 Gustavo separou um presente especial pra você!!</h1>
+    <p>Um momento único feito com carinho<br>pra celebrar a jornada de vocês</p>
+    <p>Clique para abrir...</p>
+    <button class="btn" onclick="abrir()">Ver Presente 💖</button>
+  </div>
+
+  <div id="conteudo" class="hidden">
+    <div class="card">
+      <h1>Jose Gustavo & Iascara 💖</h1>
+      <p>Nosso amor é infinito ✨</p>
+    </div>
+
+    <div class="card">
+      <h2>⏳ Estamos juntos há:</h2>
+      <div id="contador"></div>
+    </div>
+
+    <div class="card">
+      <h2>📅 Datas especiais</h2>
+      <p>28/10/2023</p>
+      <p>07/01/2024 ❤️</p>
+    </div>
+
+    <div class="card">
+      <h2>📸 Nossos momentos</h2>
+      <div class="story-container">
+        <div id="storyTrack" class="story-track">
+          <img src="FOTO1.jpeg" alt="Momento 1">
+          <img src="FOTO2.jpeg" alt="Momento 2">
+          <img src="FOTO3.jpeg" alt="Momento 3">
+        </div>
+        <div id="dots" class="dots"></div>
+      </div>
+      <audio id="player"></audio>
+    </div>
+
+    <div class="card">
+      <p>Quer ouvir nossa trilha sonora?</p>
+      <button class="btn-spotify" onclick="irParaSpotify()">Abrir Nosso Spotify 🎵</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
